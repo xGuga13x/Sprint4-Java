@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: turma-do-bem-api-java
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DB_URL
+        value: jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL
+      - key: DB_USER
+        value: rm568419
+      - key: DB_PASSWORD
+        value: 250204
